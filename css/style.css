@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+  margin:0 ;
+  box-sizing: border-box;
+}
+body{
+  Font-size: 16px;
+  height:100vh;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  align-content:center;
+
+}
+.container{
+  height:auto;
+  width: 40%;
+  display:flex;
+  flex-wrap: wrap;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,0.1);
+
+}
+.top{
+  padding:30px;
+  flex-grow: 1;
+}
+.top-tittle{
+  padding-bottom: 15px;
+  color:hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.top-subtittle{
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight:700;
+
+}
+.top-p{
+  color:hsl(218, 22%, 67%);
+}
+
+.container-bottom{
+  display:flex;
+}
+/* middle */
+.middle{
+  padding:30px;
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+.middle-tittle{
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.middle-money{
+  display: flex;
+  flex-wrap: none;
+  padding-bottom: 5px;
+}
+.p1{
+  padding-right: 10px;
+  font-size:30px;
+  font-weight:700;
+  display: flex;
+  justify-content:center;
+}
+.p2{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: hsl(204, 43%, 93%);
+}
+.middle-p{
+  padding-bottom: 30px;
+}
+.middle-button{
+  display: flex;
+  justify-content:center;
+}
+button{
+  width: 90%;
+  padding: 15px;
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  color: #fff;
+  font-size:18px;
+  font-weight: 400;
+}
+button:hover{
+  cursor: pointer;
+}
+/*bottom*/
+.bottom{
+  padding:30px;
+  padding: 30px;
+  width: 50%;
+  background-color: hsl(179, 62%, 54%);
+  color: #fff;
+}
+.bottom-tittle{
+  font-weight: 700;
+  font-size: 18px;
+}
+.bottom-p{
+  color: hsl(204, 43%, 93%);
+  padding-top: 15px;
+}
+@media (max-width: 830px){
+  .container{
+    width: 307px;
+  }
+  .container-bottom{
+    flex-direction: column;
+  }
+  .top{
+    width: 307px;
+  }
+  .middle{
+    width: 307px;
+  }
+  .bottom{
+    width: 307px;
+  }
+}
